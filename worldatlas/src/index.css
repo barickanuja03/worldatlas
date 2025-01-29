@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background: black;
+  color: whitesmoke;
+}
+@layer components {
+    .main-container {
+      @apply w-full lg:max-w-[1150px] 2xl:max-w-[1536px] mx-auto px-4 md:px-2 xl:px-4 2xl:px-4;
+    }
+    .heading{
+      @apply w-full text-base text-wrap text-red-700 font-bold capitalize py-4;
+    }
+    .button{
+      @apply   px-5 py-1 rounded-xl capitalize bg-red-800 text-white my-5;
+    }
+  }
