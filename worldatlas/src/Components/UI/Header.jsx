@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
       <header className='w-full h-11 shadow-md shadow-white/25 fixed top-0 z-50 bg-black/70 mb-7'>
-        <div className='main-container h-11'>
+        <div className='main-container h-11 mb-11'>
            <div className='navbar flex flex-row justify-between align-middle py-2'>
              <div className='text-3xl font-serif font-bold'>
                <h1>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useTransition } from 'react'
 import { getCountryData } from '../api/postApi';
 import { NavLink } from 'react-router-dom';
+import { SearchFilter } from '../Components/UI/SearchFilter';
 
 function Country() {
   const [ isPending,startTransition ] = useTransition();
@@ -17,6 +18,7 @@ function Country() {
   return (
     <div>
       <div className='main-container my-9'>
+      <SearchFilter />
       <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-7">
       {
             countries.map((data) => {
