@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useTransition } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 import { getCountryIndData } from '../../api/postApi';
+import Loading from '../UI/Loading';
 function CountryDetails() {
 const params = useParams();
  const [ isPending,startTransition ] = useTransition();
@@ -17,11 +18,11 @@ const params = useParams();
     getCountryIndData();
   },[])
   if(isPending)
-    return <h1>Loading...</h1>
+    return <Loading />
 console.log(params);
   return (
     <>
-         <section className="main-container ">
+         <section className="main-container">
       <div className="">
         {country && (
           <div className="flex flex-row justify-evenly items-center h-[70vh]">
