@@ -7,7 +7,7 @@ function Home() {
     <>
       <section>
        <div className='main-container'>
-         <div className='flex flex-row justify-between items-center my-6'>
+         <div className='flex flex-col-reverse lg:flex-row justify-between items-center my-6'>
              <div className='flex justify-start flex-col flex-wrap gap-2'>
                 <h2 className='text-2xl font-medium'>Explore the world,one country at a time</h2>
                 <p className='text-md font-thin'>
@@ -20,7 +20,7 @@ function Home() {
                 </button>
              </div>
              <div className=''>
-               <img src='/images/worldatlas.png' alt='' className='w-[40vw] aspect-video p-7' />
+               <img src='/images/worldatlas.png' alt='' className='w-full lg:w-[40vw] aspect-video p-7' />
              </div>
           </div>
        </div>

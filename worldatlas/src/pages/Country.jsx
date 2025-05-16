@@ -39,7 +39,7 @@ function Country() {
     <div>
       <div className='main-container my-9'>
       <SearchFilter search={search} setSearch={setSearch} filter={filter} setFilter={setFilter}/>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-7">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-7">
       {
         filterCountries.map((data) => {
             return(

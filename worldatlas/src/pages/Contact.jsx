@@ -10,7 +10,7 @@ function Contact() {
       <section className='main-container flex justify-center align-middle flex-col h-screen'>
         <h2 className='text-center text-3xl font-semibold my-5'>Contact Form</h2>
         <div className='flex flex-col justify-center items-center'>
-        <form action={handleFormSubmit} className='flex flex-col gap-7 w-[30vw]'>
+        <form action={handleFormSubmit} className='flex flex-col gap-7 sm:w-[90vw] lg:w-[50vw]'>
           <input 
             type='text'
             className='rounded-lg px-4 py-4 bg-transparent shadow-xl shadow-white/20 outline-none border-red-200 border-[2px]'
